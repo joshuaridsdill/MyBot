@@ -4,7 +4,7 @@ const { execute } = require('../../events/client/ready')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('ping')
-        .setDescription('Return "ping" message'),
+        .setDescription('Return the ping of the bot in a message'),
     async execute(interaction, client) {
         const message = await interaction.deferReply({
             fetchReply: true
