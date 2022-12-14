@@ -66,7 +66,7 @@ module.exports = {
         let newMessage
 
         if (draw){
-            newMessage = `<@${interaction.user.id}> picked ${client_answer}\n<@${client.user.id}> picked ${bot_answer}\n Stalemate... It's a draw`
+            newMessage = `<@${interaction.user.id}> picked ${client_answer}\n<@${client.user.id}> picked ${bot_answer}\nStalemate... It's a draw`
             console.log('draw')
         }
         else if (player_victory){
