@@ -27,7 +27,8 @@ module.exports = {
                 )),
     async execute(interaction, client) {
         const message = await interaction.deferReply({
-            fetchReply: true
+            fetchReply: true,
+            ephemeral: true
         })
 
         const bot_answer_int = Math.floor(Math.random() * 3) + 1
