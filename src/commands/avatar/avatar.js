@@ -45,7 +45,7 @@ module.exports = {
                 iconURL: interaction.user.displayAvatarURL(),
                 name: `${interaction.user.tag}`,
             })
-            .setDescription('Avatar of user')
+            .setDescription('Your Avatar')
             .setThumbnail(user.displayAvatarURL())
             .setImage(user.displayAvatarURL())
             .setTimestamp(Date.now())
@@ -53,6 +53,7 @@ module.exports = {
         }
         
         await interaction.reply({
+            ephemeral: true,
             embeds: [embed]
         })
     }
